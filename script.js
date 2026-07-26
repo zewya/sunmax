@@ -1,7 +1,9 @@
 // ===== Accordion toggle (global for onclick) =====
 function toggleCategory(header) {
   const card = header.closest('.service-category');
-  card.classList.toggle('active');
+  const isActive = card.classList.contains('active');
+  document.querySelectorAll('.service-category').forEach(c => c.classList.remove('active'));
+  if (!isActive) card.classList.add('active');
 }
 
 document.addEventListener('DOMContentLoaded', () => {
