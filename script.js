@@ -232,7 +232,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function resetAuto() {
       clearInterval(autoTimer);
-      autoTimer = setInterval(nextSlide, 2000);
+      autoTimer = setInterval(nextSlide, 3000);
     }
 
     goTo(0);
