@@ -1,3 +1,9 @@
+// ===== Accordion toggle (global for onclick) =====
+function toggleCategory(header) {
+  const card = header.closest('.service-category');
+  card.classList.toggle('active');
+}
+
 document.addEventListener('DOMContentLoaded', () => {
 
   // ===== Navbar scroll =====

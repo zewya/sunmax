@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sun Max — Студия красоты | Ресницы и брови в Бишкеке</title>
-  <meta name="description" content="Sun Max — студия красоты в Бишкеке. Наращивание ресниц, ламинирование, коррекция бровей. 19 лет создаём ресницы, в которые влюбляются! Запись по телефону.">
-  <meta name="keywords" content="Sun Max, студия красоты, ресницы, брови, Бишкек, наращивание ресниц, ламинирование ресниц, коррекция бровей">
+  <meta name="description" content="Sun Max — студия красоты в Бишкеке. Солярий, массаж LPG, ресницы, брови, маникюр, лазерная эпиляция. 19 лет создаём красоту! Запись по телефону.">
+  <meta name="keywords" content="Sun Max, студия красоты, Бишкек, солярий, массаж LPG, наращивание ресниц, ламинирование ресниц, коррекция бровей, маникюр, педикюр, лазерная эпиляция">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://sunmax.vercel.app">
 
@@ -36,7 +36,7 @@
         <span class="logo-text">Sun Max</span>
       </a>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#services">Услуги</a></li>
+            <li><a href="#services">Услуги и цены</a></li>
         <li><a href="#about">О нас</a></li>
         <li><a href="#gallery">Галерея</a></li>
         <li><a href="#contact">Контакты</a></li>
@@ -55,7 +55,7 @@
       <div class="hero-text">
         <span class="hero-badge">Студия красоты</span>
         <h1>Ресницы,<br>в которые <span class="italic">влюбляются</span></h1>
-        <p class="hero-sub">19 лет создаём идеальный взгляд. Наращивание, ламинирование ресниц и коррекция бровей в Бишкеке.</p>
+        <p class="hero-sub">19 лет создаём идеальный взгляд. Ресницы, брови, солярий, массаж, маникюр и лазерная эпиляция в Бишкеке.</p>
         <div class="hero-actions">
           <a href="#booking" class="btn btn-primary btn-lg">Записаться</a>
           <a href="#services" class="btn btn-outline btn-lg">Наши услуги</a>
@@ -100,51 +100,184 @@
   <section class="services" id="services">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">Услуги</span>
-        <h2>Что мы предлагаем</h2>
-        <p class="section-sub">Профессиональный уход за ресницами и бровями в уютной студии</p>
+        <span class="section-tag">Услуги и цены</span>
+        <h2>Полный каталог</h2>
+        <p class="section-sub">Солярий, массаж, ресницы, брови, маникюр, лазерная эпиляция — всё в одной студии</p>
       </div>
       <div class="services-grid">
-        <div class="service-card fade-in">
-          <div class="service-icon">
-            <svg class="icon-svg-xl" viewBox="0 0 24 24" fill="none" stroke="var(--rose)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/><path d="M12 5V2"/><path d="M18 6.5l2-3"/><path d="M6 6.5L4 3.5"/></svg>
+
+        <!-- Ресницы -->
+        <div class="service-category fade-in">
+          <div class="category-header" onclick="toggleCategory(this)">
+            <div class="category-icon">
+              <svg class="icon-svg-lg" viewBox="0 0 24 24" fill="none" stroke="var(--rose)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/><path d="M12 5V2"/><path d="M18 6.5l2-3"/><path d="M6 6.5L4 3.5"/></svg>
+            </div>
+            <div class="category-info">
+              <h3>Ресницы</h3>
+              <span class="category-count">3 услуги</span>
+            </div>
+            <svg class="category-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
           </div>
-          <h3>Наращивание ресниц</h3>
-          <p>Классическое, 2D/3D объёмное и голливудское наращивание. Любая сложность — от натурального до драматичного эффекта.</p>
-          <div class="service-footer">
-            <span class="service-price">от 1 000 сом</span>
-          </div>
-        </div>
-        <div class="service-card fade-in">
-          <div class="service-icon">
-            <svg class="icon-svg-xl" viewBox="0 0 24 24" fill="none" stroke="var(--rose)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/><path d="M12 6l2 4 4.5.5-3.5 3 1 4.5L12 15l-4 3 1-4.5-3.5-3L10 10Z"/></svg>
-          </div>
-          <h3>Ламинирование ресниц</h3>
-          <p>Бережное окрашивание и фиксация изгиба. Ресницы выглядят ухоженными, подкрученными и густыми без наращивания.</p>
-          <div class="service-footer">
-            <span class="service-price">от 800 сом</span>
-          </div>
-        </div>
-        <div class="service-card fade-in">
-          <div class="service-icon">
-            <svg class="icon-svg-xl" viewBox="0 0 24 24" fill="none" stroke="var(--rose)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8c2-2 5-2.5 8-1 3-1.5 6-1 8 1"/><path d="M3 16c2 2 5 2.5 8 1 3 1.5 6 1 8-1"/></svg>
-          </div>
-          <h3>Коррекция бровей</h3>
-          <p>Моделирование формы, окрашивание краской или хной, долговременная укладка. Идеальный контур под ваш тип лица.</p>
-          <div class="service-footer">
-            <span class="service-price">от 400 сом</span>
+          <div class="category-body">
+            <div class="price-item"><span class="price-name">Снятие нарощенных ресниц</span><span class="price-value">500 c</span></div>
+            <div class="price-item"><span class="price-name">Ламинирование ресниц</span><span class="price-value">2 500 c</span></div>
+            <div class="price-item"><span class="price-name">Наращивание ресниц</span><span class="price-value">2 600–5 500 c</span></div>
           </div>
         </div>
-        <div class="service-card fade-in">
-          <div class="service-icon">
-            <svg class="icon-svg-xl" viewBox="0 0 24 24" fill="none" stroke="var(--rose)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c-1 3-3 5-6 6 3 1 5 3 6 6 1-3 3-5 6-6-3-1-5-3-6-6Z"/></svg>
+
+        <!-- Брови -->
+        <div class="service-category fade-in">
+          <div class="category-header" onclick="toggleCategory(this)">
+            <div class="category-icon">
+              <svg class="icon-svg-lg" viewBox="0 0 24 24" fill="none" stroke="var(--rose)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8c2-2 5-2.5 8-1 3-1.5 6-1 8 1"/><path d="M3 16c2 2 5 2.5 8 1 3 1.5 6 1 8-1"/></svg>
+            </div>
+            <div class="category-info">
+              <h3>Брови</h3>
+              <span class="category-count">4 услуги</span>
+            </div>
+            <svg class="category-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
           </div>
-          <h3>Ламинирование бровей</h3>
-          <p>Укладка + окрашивание + уход. Брови выглядят густыми, ухоженными и держат форму до 4 недель.</p>
-          <div class="service-footer">
-            <span class="service-price">от 800 сом</span>
+          <div class="category-body">
+            <div class="price-item"><span class="price-name">Архитектура бровей (коррекция + окрашивание)</span><span class="price-value">1 800 c</span></div>
+            <div class="price-item"><span class="price-name">Мусульманская коррекция</span><span class="price-value">1 200 c</span></div>
+            <div class="price-item"><span class="price-name">Ламинирование бровей</span><span class="price-value">2 500 c</span></div>
+            <div class="price-item"><span class="price-name">Ламинирование ресницы + брови</span><span class="price-value">5 000 c</span></div>
           </div>
         </div>
+
+        <!-- Солярий -->
+        <div class="service-category fade-in">
+          <div class="category-header" onclick="toggleCategory(this)">
+            <div class="category-icon">
+              <svg class="icon-svg-lg" viewBox="0 0 24 24" fill="none" stroke="var(--rose)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><polyline points="1 12 3 12 21 12 23 12"/></svg>
+            </div>
+            <div class="category-info">
+              <h3>Солярий</h3>
+              <span class="category-count">3 позиции</span>
+            </div>
+            <svg class="category-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <div class="category-body">
+            <div class="price-item"><span class="price-name">Солярий — 1 минута</span><span class="price-value">70 c</span></div>
+            <div class="price-item"><span class="price-name">Абонемент 50 минут</span><span class="price-value">3 150 c</span></div>
+            <div class="price-item"><span class="price-name">Абонемент 100 минут</span><span class="price-value">5 600 c</span></div>
+          </div>
+        </div>
+
+        <!-- Массаж -->
+        <div class="service-category fade-in">
+          <div class="category-header" onclick="toggleCategory(this)">
+            <div class="category-icon">
+              <svg class="icon-svg-lg" viewBox="0 0 24 24" fill="none" stroke="var(--rose)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            </div>
+            <div class="category-info">
+              <h3>Массаж</h3>
+              <span class="category-count">17 услуг</span>
+            </div>
+            <svg class="category-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <div class="category-body">
+            <div class="price-sub">LPG массаж</div>
+            <div class="price-item"><span class="price-name">LPG массаж 1 процедура</span><span class="price-value">1 900 c</span></div>
+            <div class="price-item"><span class="price-name">LPG массаж курс 10 процедур</span><span class="price-value">17 500 c</span></div>
+            <div class="price-item"><span class="price-name">LPG лицо</span><span class="price-value">2 000 c</span></div>
+            <div class="price-item"><span class="price-name">LPG постхирургия — разовая процедура</span><span class="price-value">2 200 c</span></div>
+            <div class="price-item"><span class="price-name">LPG постхирургия — костюм</span><span class="price-value">1 500 c</span></div>
+            <div class="price-item"><span class="price-name">LPG постхирургия — курс 10 + костюм</span><span class="price-value">20 500 c</span></div>
+            <div class="price-item"><span class="price-name">LPG курс 10 + костюм в подарок</span><span class="price-value">17 500 c</span></div>
+            <div class="price-sub">Классический массаж</div>
+            <div class="price-item"><span class="price-name">Perfect Body (LPG тело 6 + массаж 6 + обёртывание 3)</span><span class="price-value">38 000 c</span></div>
+            <div class="price-item"><span class="price-name">Общий массаж 1.5 часа</span><span class="price-value">3 000 c</span></div>
+            <div class="price-item"><span class="price-name">Стоун общий</span><span class="price-value">3 700 c</span></div>
+            <div class="price-item"><span class="price-name">Антицеллюлит 1.5 часа</span><span class="price-value">3 500 c</span></div>
+            <div class="price-item"><span class="price-name">Фитнес массаж</span><span class="price-value">3 500 c</span></div>
+            <div class="price-item"><span class="price-name">Мужской общий массаж</span><span class="price-value">3 800 c</span></div>
+            <div class="price-sub">Зоны тела</div>
+            <div class="price-item"><span class="price-name">Обёртывание</span><span class="price-value">3 500 c</span></div>
+            <div class="price-item"><span class="price-name">Бедра / Ягодицы</span><span class="price-value">1 600 c</span></div>
+            <div class="price-item"><span class="price-name">Спина (1 час)</span><span class="price-value">1 500 c</span></div>
+            <div class="price-item"><span class="price-name">Стопы до колена (40 мин)</span><span class="price-value">1 200 c</span></div>
+            <div class="price-item"><span class="price-name">Руки до локтя (30 мин)</span><span class="price-value">800 c</span></div>
+            <div class="price-item"><span class="price-name">Шея / воротник</span><span class="price-value">1 000 c</span></div>
+            <div class="price-item"><span class="price-name">Живот</span><span class="price-value">900 c</span></div>
+            <div class="price-item"><span class="price-name">Скраб</span><span class="price-value">1 200 c</span></div>
+            <div class="price-item"><span class="price-name">Руки + ноги</span><span class="price-value">1 800 c</span></div>
+          </div>
+        </div>
+
+        <!-- Маникюр / Педикюр -->
+        <div class="service-category fade-in">
+          <div class="category-header" onclick="toggleCategory(this)">
+            <div class="category-icon">
+              <svg class="icon-svg-lg" viewBox="0 0 24 24" fill="none" stroke="var(--rose)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+            </div>
+            <div class="category-info">
+              <h3>Маникюр / Педикюр</h3>
+              <span class="category-count">2 услуги</span>
+            </div>
+            <svg class="category-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <div class="category-body">
+            <div class="price-item"><span class="price-name">Маникюр + покрытие гель-лак</span><span class="price-value">от 2 000 c</span></div>
+            <div class="price-item"><span class="price-name">Педикюр</span><span class="price-value">от 2 000 c</span></div>
+          </div>
+        </div>
+
+        <!-- Лазерная эпиляция (женская) -->
+        <div class="service-category fade-in">
+          <div class="category-header" onclick="toggleCategory(this)">
+            <div class="category-icon">
+              <svg class="icon-svg-lg" viewBox="0 0 24 24" fill="none" stroke="var(--rose)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/><line x1="12" y1="6" x2="12" y2="10"/><line x1="16" y1="8" x2="14" y2="10"/></svg>
+            </div>
+            <div class="category-info">
+              <h3>Лазерная эпиляция</h3>
+              <span class="category-count">14 зон / комбо</span>
+            </div>
+            <svg class="category-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <div class="category-body">
+            <div class="price-sub">Зоны</div>
+            <div class="price-item"><span class="price-name">Усики</span><span class="price-value">600 c</span></div>
+            <div class="price-item"><span class="price-name">Подмышки</span><span class="price-value">900 c</span></div>
+            <div class="price-item"><span class="price-name">Бикини</span><span class="price-value">2 200 c</span></div>
+            <div class="price-item"><span class="price-name">Руки до локтя</span><span class="price-value">2 000 c</span></div>
+            <div class="price-item"><span class="price-name">Ноги до колен</span><span class="price-value">2 400 c</span></div>
+            <div class="price-item"><span class="price-name">Ноги полностью</span><span class="price-value">3 500 c</span></div>
+            <div class="price-item"><span class="price-name">Всё тело</span><span class="price-value">10 000 c</span></div>
+            <div class="price-sub">Комбо</div>
+            <div class="price-item"><span class="price-name">Бикини + подмышки</span><span class="price-value">2 500 c</span></div>
+            <div class="price-item"><span class="price-name">Ноги до колена + подмышки</span><span class="price-value">2 700 c</span></div>
+            <div class="price-item"><span class="price-name">Бикини + подмышки + ноги до колена</span><span class="price-value">4 400 c</span></div>
+            <div class="price-item"><span class="price-name">Бикини + подмышки + ноги полностью</span><span class="price-value">5 300 c</span></div>
+            <div class="price-item"><span class="price-name">Бикини + подмышки + ноги до колена + руки до локтя</span><span class="price-value">6 600 c</span></div>
+            <div class="price-item"><span class="price-name">Бикини + подмышки + ноги полностью + руки полностью</span><span class="price-value">7 500 c</span></div>
+          </div>
+        </div>
+
+        <!-- Лазерная эпиляция (мужская) -->
+        <div class="service-category fade-in">
+          <div class="category-header" onclick="toggleCategory(this)">
+            <div class="category-icon">
+              <svg class="icon-svg-lg" viewBox="0 0 24 24" fill="none" stroke="var(--rose)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/><path d="M17 21l-5-4-5 4"/><path d="M12 17v4"/></svg>
+            </div>
+            <div class="category-info">
+              <h3>Лазерная эпиляция (мужская)</h3>
+              <span class="category-count">7 услуг</span>
+            </div>
+            <svg class="category-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <div class="category-body">
+            <div class="price-item"><span class="price-name">Подмышки</span><span class="price-value">1 200 c</span></div>
+            <div class="price-item"><span class="price-name">Грудь</span><span class="price-value">3 000 c</span></div>
+            <div class="price-item"><span class="price-name">Пах</span><span class="price-value">3 500 c</span></div>
+            <div class="price-item"><span class="price-name">Спина</span><span class="price-value">4 500 c</span></div>
+            <div class="price-item"><span class="price-name">Живот полоска</span><span class="price-value">900 c</span></div>
+            <div class="price-item"><span class="price-name">Живот полностью</span><span class="price-value">2 500 c</span></div>
+            <div class="price-item"><span class="price-name">Пах + подмышки</span><span class="price-value">3 800 c</span></div>
+            <div class="price-item"><span class="price-name">Всё тело</span><span class="price-value">12 000 c</span></div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -178,7 +311,7 @@
         <div class="about-text fade-in">
           <span class="section-tag">О студии</span>
           <h2>19 лет создаём ресницы, в которые влюбляются</h2>
-          <p>Sun Max — профессиональная студия красоты в Бишкеке. Специализируемся на оформлении ресниц и бровей, делаем акцент на качестве и индивидуальном подходе.</p>
+          <p>Sun Max — профессиональная студия красоты в Бишкеке. Солярий, массаж LPG, ресницы, брови, маникюр и лазерная эпиляция — всё в одном месте с индивидуальным подходом.</p>
           <div class="about-feats">
             <div class="about-feat">
               <span class="feat-icon">
@@ -384,7 +517,7 @@
         <div class="footer-links">
           <h4>Навигация</h4>
           <ul>
-            <li><a href="#services">Услуги</a></li>
+        <li><a href="#services">Услуги и цены</a></li>
             <li><a href="#about">О нас</a></li>
             <li><a href="#gallery">Галерея</a></li>
             <li><a href="#contact">Контакты</a></li>
