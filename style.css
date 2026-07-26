@@ -270,9 +270,8 @@ h3 { font-size: 1.35rem; }
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 80% 60% at 20% 30%, var(--rose-pale) 0%, transparent 60%),
-    radial-gradient(ellipse 60% 50% at 80% 70%, rgba(201, 169, 108, 0.08) 0%, transparent 50%),
-    radial-gradient(ellipse 50% 40% at 50% 50%, var(--cream-dark) 0%, var(--cream) 100%);
+    linear-gradient(rgba(253, 248, 245, 0.85), rgba(253, 248, 245, 0.92)),
+    url('images/hero-bg.jpg') center / cover no-repeat;
   z-index: 0;
 }
 
