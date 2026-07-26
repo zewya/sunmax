@@ -24,7 +24,9 @@ function closeCategoryModal(e) {
 }
 
 document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') closeCategoryModal({ target: document.getElementById('categoryModal'), currentTarget: document.getElementById('categoryModal') });
+  if (e.key === 'Escape' && document.getElementById('categoryModal').classList.contains('open')) {
+    closeCategoryModal();
+  }
 });
 
 document.addEventListener('DOMContentLoaded', () => {
