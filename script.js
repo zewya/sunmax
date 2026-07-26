@@ -1,10 +1,31 @@
 // ===== Accordion toggle (global for onclick) =====
-function toggleCategory(header) {
-  const card = header.closest('.service-category');
-  const isActive = card.classList.contains('active');
-  document.querySelectorAll('.service-category').forEach(c => c.classList.remove('active'));
-  if (!isActive) card.classList.add('active');
+function toggleCategory(card) {
+  const modal = document.getElementById('categoryModal');
+  const title = card.querySelector('.category-info h3')?.textContent || '';
+  const icon = card.querySelector('.category-icon')?.cloneNode(true);
+  const body = card.querySelector('.category-body')?.cloneNode(true);
+
+  document.getElementById('modalTitle').textContent = title;
+  const iconSlot = document.getElementById('modalIcon');
+  iconSlot.innerHTML = '';
+  if (icon) iconSlot.appendChild(icon);
+  const bodySlot = document.getElementById('modalBody');
+  bodySlot.innerHTML = '';
+  if (body) bodySlot.appendChild(body);
+
+  modal.classList.add('open');
+  document.body.style.overflow = 'hidden';
 }
+
+function closeCategoryModal(e) {
+  if (e && e.target !== e.currentTarget) return;
+  document.getElementById('categoryModal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeCategoryModal({ target: document.getElementById('categoryModal'), currentTarget: document.getElementById('categoryModal') });
+});
 
 document.addEventListener('DOMContentLoaded', () => {
 
