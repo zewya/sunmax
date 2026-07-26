@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sun Max — Студия красоты | Ресницы и брови в Бишкеке</title>
+  <meta name="description" content="Sun Max — студия красоты в Бишкеке. Наращивание ресниц, ламинирование, коррекция бровей. 19 лет создаём ресницы, в которые влюбляются! Запись по телефону.">
+  <meta name="keywords" content="Sun Max, студия красоты, ресницы, брови, Бишкек, наращивание ресниц, ламинирование ресниц, коррекция бровей">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://sunmax.vercel.app">
+
+  <meta property="og:title" content="Sun Max — Студия красоты | Ресницы и брови">
+  <meta property="og:description" content="19 лет создаём ресницы, в которые влюбляются! Наращивание, ламинирование, коррекция бровей в Бишкеке.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sunmax.vercel.app">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Sun Max — Студия красоты">
+  <meta name="twitter:description" content="Ресницы и брови в Бишкеке. 19 лет создаём красоту.">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="logo">
+        <span class="logo-icon">✨</span>
+        <span class="logo-text">Sun Max</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#services">Услуги</a></li>
+        <li><a href="#about">О нас</a></li>
+        <li><a href="#gallery">Галерея</a></li>
+        <li><a href="#contact">Контакты</a></li>
+      </ul>
+      <a href="#booking" class="btn btn-primary nav-cta">Записаться</a>
+      <button class="hamburger" id="hamburger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-content">
+      <div class="hero-text">
+        <span class="hero-badge">Студия красоты</span>
+        <h1>Ресницы,<br>в которые <span class="italic">влюбляются</span></h1>
+        <p class="hero-sub">19 лет создаём идеальный взгляд. Наращивание, ламинирование ресниц и коррекция бровей в Бишкеке.</p>
+        <div class="hero-actions">
+          <a href="#booking" class="btn btn-primary btn-lg">Записаться</a>
+          <a href="#services" class="btn btn-outline btn-lg">Наши услуги</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number">19</span>
+            <span class="stat-label">лет опыта</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">4.8</span>
+            <span class="stat-label">рейтинг</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">247+</span>
+            <span class="stat-label">отзывов</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-decor-circle"></div>
+        <div class="hero-decor-dots"></div>
+        <div class="hero-card">
+          <div class="hero-card-icon">👁️</div>
+          <h3>Идеальный взгляд</h3>
+          <p>Наращивание ресниц любой сложности</p>
+        </div>
+        <div class="hero-card hero-card-2">
+          <div class="hero-card-icon">✨</div>
+          <h3>Идеальные брови</h3>
+          <p>Коррекция, окрашивание, ламинирование</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Услуги</span>
+        <h2>Что мы предлагаем</h2>
+        <p class="section-sub">Профессиональный уход за ресницами и бровями в уютной студии</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card fade-in">
+          <div class="service-icon">💫</div>
+          <h3>Наращивание ресниц</h3>
+          <p>Классическое, 2D/3D объёмное и голливудское наращивание. Любая сложность — от натурального до драматичного эффекта.</p>
+          <div class="service-footer">
+            <span class="service-price">от 1 000 сом</span>
+          </div>
+        </div>
+        <div class="service-card fade-in">
+          <div class="service-icon">🌟</div>
+          <h3>Ламинирование ресниц</h3>
+          <p>Бережное окрашивание и фиксация изгиба. Ресницы выглядят ухоженными, подкрученными и густыми без наращивания.</p>
+          <div class="service-footer">
+            <span class="service-price">от 800 сом</span>
+          </div>
+        </div>
+        <div class="service-card fade-in">
+          <div class="service-icon">✏️</div>
+          <h3>Коррекция бровей</h3>
+          <p>Моделирование формы, окрашивание краской или хной, долговременная укладка. Идеальный контур под ваш тип лица.</p>
+          <div class="service-footer">
+            <span class="service-price">от 400 сом</span>
+          </div>
+        </div>
+        <div class="service-card fade-in">
+          <div class="service-icon">🌸</div>
+          <h3>Ламинирование бровей</h3>
+          <p>Укладка + окрашивание + уход. Брови выглядят густыми, ухоженными и держат форму до 4 недель.</p>
+          <div class="service-footer">
+            <span class="service-price">от 800 сом</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual fade-in">
+          <div class="about-card-main">
+            <div class="about-card-inner">
+              <div class="about-card-icon">👁️‍🗨️</div>
+              <h3>Sun Max</h3>
+              <p>Студия красоты</p>
+              <div class="about-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-text">4.8 · 247 отзывов</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-decor"></div>
+        </div>
+        <div class="about-text fade-in">
+          <span class="section-tag">О студии</span>
+          <h2>19 лет создаём ресницы, в которые влюбляются</h2>
+          <p>Sun Max — профессиональная студия красоты в Бишкеке. Специализируемся на оформлении ресниц и бровей, делаем акцент на качестве и индивидуальном подходе.</p>
+          <div class="about-feats">
+            <div class="about-feat">
+              <span class="feat-icon">⭐</span>
+              <span>Рейтинг 4.8 на 2ГИС</span>
+            </div>
+            <div class="about-feat">
+              <span class="feat-icon">💬</span>
+              <span>Более 247 положительных отзывов</span>
+            </div>
+            <div class="about-feat">
+              <span class="feat-icon">🏆</span>
+              <span>19 лет опыта в beauty-сфере</span>
+            </div>
+            <div class="about-feat">
+              <span class="feat-icon">📍</span>
+              <span>Уютный кабинет в центре Бишкека</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Галерея</span>
+        <h2>Наши работы</h2>
+        <p class="section-sub">Примеры работ наших мастеров</p>
+      </div>
+      <div class="gallery-grid" id="galleryGrid">
+        <div class="gallery-item gallery-placeholder fade-in">
+          <div class="placeholder-icon">📸</div>
+          <p>Фото работ скоро появятся</p>
+        </div>
+        <div class="gallery-item gallery-placeholder fade-in">
+          <div class="placeholder-icon">💫</div>
+          <p>Следите за нашим Instagram</p>
+        </div>
+        <div class="gallery-item gallery-placeholder fade-in">
+          <div class="placeholder-icon">✨</div>
+          <p>@sunmax_lashes</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Form -->
+  <section class="booking" id="booking">
+    <div class="booking-bg"></div>
+    <div class="container">
+      <div class="booking-content">
+        <div class="booking-text fade-in">
+          <span class="section-tag section-tag-light">Запись</span>
+          <h2>Запишитесь на процедуру</h2>
+          <p>Оставьте заявку — мы перезвоним, подберём удобное время и ответим на все вопросы.</p>
+          <div class="booking-contacts">
+            <div class="booking-contact">
+              <span class="bc-icon">📞</span>
+              <div>
+                <strong>Позвоните нам</strong>
+                <a href="tel:+996770004609">+996 770 004 609</a>
+              </div>
+            </div>
+            <div class="booking-contact">
+              <span class="bc-icon">💬</span>
+              <div>
+                <strong>Напишите в WhatsApp</strong>
+                <a href="https://wa.me/996708552255" target="_blank">+996 708 552 255</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="booking-form-wrap fade-in">
+          <form class="booking-form" id="bookingForm">
+            <div class="form-group">
+              <label for="formName">Ваше имя</label>
+              <input type="text" id="formName" name="name" placeholder="Например, Айжамал" required>
+            </div>
+            <div class="form-group">
+              <label for="formPhone">Номер телефона</label>
+              <input type="tel" id="formPhone" name="phone" placeholder="+996 XXX XXX XXX" required>
+            </div>
+            <div class="form-group">
+              <label for="formMessage">Услуга (по желанию)</label>
+              <textarea id="formMessage" name="message" placeholder="Что вас интересует? Наращивание, ламинирование, брови..." rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block" id="formSubmit">
+              <span id="formSubmitText">Отправить заявку</span>
+              <span id="formSubmitSpinner" class="spinner hidden"></span>
+            </button>
+            <p class="form-note">Нажимая кнопку, вы соглашаетесь на обработку персональных данных</p>
+          </form>
+          <div class="form-success hidden" id="formSuccess">
+            <div class="success-icon">✅</div>
+            <h3>Заявка отправлена!</h3>
+            <p>Мы свяжемся с вами в ближайшее время.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Map -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Контакты</span>
+        <h2>Как нас найти</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info fade-in">
+          <div class="contact-item">
+            <span class="ci-icon">📍</span>
+            <div>
+              <strong>Адрес</strong>
+              <p>ул. Исы Ахунбаева, 127/2, Бишкек</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="ci-icon">📞</span>
+            <div>
+              <strong>Телефон</strong>
+              <a href="tel:+996770004609">+996 770 004 609</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="ci-icon">📧</span>
+            <div>
+              <strong>Email</strong>
+              <a href="mailto:elena_osipova69@mail.ru">elena_osipova69@mail.ru</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="ci-icon">📷</span>
+            <div>
+              <strong>Instagram</strong>
+              <a href="https://instagram.com/sunmax_lashes" target="_blank">@sunmax_lashes</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="ci-icon">💬</span>
+            <div>
+              <strong>WhatsApp</strong>
+              <a href="https://wa.me/996708552255" target="_blank">+996 708 552 255</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="ci-icon">🕐</span>
+            <div>
+              <strong>График работы</strong>
+              <p>Пн–Пт: 09:00–17:00<br>Сб: 09:00–14:00<br>Вс: выходной</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-map fade-in" id="map"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="logo-icon">✨</span>
+          <span class="logo-text">Sun Max</span>
+          <p>Студия красоты в Бишкеке.<br>Ресницы и брови — наша любовь.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Навигация</h4>
+          <ul>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#gallery">Галерея</a></li>
+            <li><a href="#contact">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer-contacts">
+          <h4>Контакты</h4>
+          <ul>
+            <li><a href="tel:+996770004609">+996 770 004 609</a></li>
+            <li><a href="https://instagram.com/sunmax_lashes" target="_blank">Instagram</a></li>
+            <li><a href="https://wa.me/996708552255" target="_blank">WhatsApp</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Sun Max. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
