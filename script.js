@@ -173,4 +173,47 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // ===== Reviews Carousel =====
+  const track = document.getElementById('reviewsTrack');
+  const dotsWrap = document.getElementById('reviewsDots');
+  const slides = track?.querySelectorAll('.review-slide');
+  let currentSlide = 0;
+  let autoTimer;
+  if (slides?.length) {
+
+    slides.forEach((_, i) => {
+      const dot = document.createElement('button');
+      dot.setAttribute('aria-label', `Отзыв ${i + 1}`);
+      dot.addEventListener('click', () => goTo(i));
+      dotsWrap.appendChild(dot);
+    });
+
+    function goTo(index) {
+      currentSlide = index;
+      track.style.transform = `translateX(-${index * 100}%)`;
+      dotsWrap.querySelectorAll('button').forEach((d, i) => {
+        d.classList.toggle('active', i === index);
+      });
+      resetAuto();
+    }
+
+    function nextSlide() {
+      goTo((currentSlide + 1) % slides.length);
+    }
+
+    function prevSlide() {
+      goTo((currentSlide - 1 + slides.length) % slides.length);
+    }
+
+    function resetAuto() {
+      clearInterval(autoTimer);
+      autoTimer = setInterval(nextSlide, 5000);
+    }
+
+    goTo(0);
+
+    document.querySelector('.review-arrow-prev')?.addEventListener('click', prevSlide);
+    document.querySelector('.review-arrow-next')?.addEventListener('click', nextSlide);
+  }
+
 });

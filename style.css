@@ -643,6 +643,130 @@ h3 { font-size: 1.35rem; }
   flex-shrink: 0;
 }
 
+/* --- Reviews / Carousel --- */
+.reviews {
+  padding: 100px 0;
+  background: var(--cream);
+}
+
+.reviews-carousel {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.reviews-track-wrap {
+  flex: 1;
+  overflow: hidden;
+}
+
+.reviews-track {
+  display: flex;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.review-slide {
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.review-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 2rem 2.5rem;
+  max-width: 560px;
+  width: 100%;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--rose-light);
+}
+
+.review-author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.review-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--rose-light);
+  flex-shrink: 0;
+}
+
+.review-author-info strong {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  color: var(--brown);
+}
+
+.review-text {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--brown-light);
+  font-style: italic;
+}
+
+.review-arrow {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--rose-light);
+  background: var(--white);
+  color: var(--rose);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: var(--transition);
+}
+
+.review-arrow:hover {
+  background: var(--rose);
+  color: var(--white);
+  border-color: var(--rose);
+}
+
+.reviews-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.reviews-dots button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background: var(--rose-light);
+  cursor: pointer;
+  transition: var(--transition);
+  padding: 0;
+}
+
+.reviews-dots button.active {
+  background: var(--rose);
+  width: 28px;
+  border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+  .review-card {
+    padding: 1.5rem;
+  }
+  .review-arrow {
+    width: 36px;
+    height: 36px;
+  }
+}
+
 /* --- Gallery --- */
 .gallery {
   padding: 100px 0;
