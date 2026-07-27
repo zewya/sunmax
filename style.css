@@ -1268,7 +1268,6 @@ h3 { font-size: 1.35rem; }
     grid-template-columns: 1fr;
   }
 
-  .about-text { order: -1; }
   .about-visual { max-width: 400px; margin: 0 auto; }
 
   .footer-content {
