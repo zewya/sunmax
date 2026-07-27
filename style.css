@@ -627,7 +627,7 @@ h3 { font-size: 1.35rem; }
 }
 
 .about-card-main {
-  background: linear-gradient(135deg, var(--rose), var(--gold));
+  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('../images/about-studio.jpg') center / cover no-repeat;
   border-radius: var(--radius-lg);
   padding: 3rem;
   color: var(--white);
@@ -642,20 +642,13 @@ h3 { font-size: 1.35rem; }
 
 .about-card-icon { font-size: 3rem; margin-bottom: 1rem; }
 
-.about-logo-wrap {
-  width: 100%;
-  max-width: 260px;
-  margin: 0 auto 1rem;
-  border-radius: var(--radius);
-  overflow: hidden;
-  border: 3px solid var(--rose-light);
-  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
-}
-
 .about-logo-img {
-  width: 100%;
-  height: auto;
-  display: block;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid var(--rose-light);
 }
 
 .about-card-inner h3 {
