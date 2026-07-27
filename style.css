@@ -638,6 +638,11 @@ h3 { font-size: 1.35rem; }
 
 .about-card-inner {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 380px;
 }
 
 .about-card-icon { font-size: 3rem; margin-bottom: 1rem; }
