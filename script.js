@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
         overflow: hidden;
         box-shadow: 0 4px 16px rgba(0,0,0,0.2);
       ">
-        <img src="images/logo.jpg" style="width:100%;height:100%;object-fit:cover;" alt="Sun Max">
+        <img src="images/logo.jpg" style="width:100%;height:100%;object-fit:cover;" alt="Beauty Lab">
       </div>
     `;
 
@@ -105,8 +105,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     marker.bindPopup(`
       <div style="font-family: 'Inter', sans-serif; text-align: center;">
-        <strong style="font-size: 1.1rem;">Sun Max</strong><br>
-        <span style="color: #666;">ул. Исы Ахунбаева, 127/2</span>
+        <strong style="font-size: 1.1rem;">Beauty Lab</strong><br>
+        <span style="color: #666;">ул. Примерная, 01</span>
       </div>
     `);
 

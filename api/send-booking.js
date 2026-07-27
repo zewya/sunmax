@@ -19,7 +19,7 @@ export default async function handler(req, res) {
     }
 
     const text = [
-      `\u{1F48B} \u041D\u043E\u0432\u0430\u044F \u0437\u0430\u044F\u0432\u043A\u0430 Sun Max`,
+      `\u{1F48B} \u041D\u043E\u0432\u0430\u044F \u0437\u0430\u044F\u0432\u043A\u0430 Beauty Lab`,
       `\u{1F464} \u0418\u043C\u044F: ${name}`,
       `\u{1F4F1} \u0422\u0435\u043B\u0435\u0444\u043E\u043D: ${phone}`,
       message ? `\u{1F4DD} \u041A\u043E\u043C\u043C\u0435\u043D\u0442\u0430\u0440\u0438\u0439: ${message}` : ''
