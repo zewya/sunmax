@@ -627,7 +627,7 @@ h3 { font-size: 1.35rem; }
 }
 
 .about-card-main {
-  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('../images/about-studio.jpg') center / cover no-repeat;
+  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('images/about-studio.jpg') center / cover no-repeat;
   border-radius: var(--radius-lg);
   padding: 3rem;
   color: var(--white);
