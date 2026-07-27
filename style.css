@@ -271,7 +271,7 @@ h3 { font-size: 1.35rem; }
   inset: 0;
   background:
     linear-gradient(rgba(253, 248, 245, 0.85), rgba(253, 248, 245, 0.92)),
-    url('images/hero-bg.jpg') center / cover no-repeat;
+    url('images/hero-bg.png') center / cover no-repeat;
   z-index: 0;
 }
 
@@ -627,7 +627,7 @@ h3 { font-size: 1.35rem; }
 }
 
 .about-card-main {
-  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('images/about-studio.jpg') center / cover no-repeat;
+  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('images/about-studio.png') center / cover no-repeat;
   border-radius: var(--radius-lg);
   padding: 3rem;
   color: var(--white);
