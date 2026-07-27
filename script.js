@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const map = L.map('map', {
       zoomControl: true,
       scrollWheelZoom: false
-    }).setView([42.844301, 74.598122], 15);
+    }).setView([42.876, 74.610], 15);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 18,
@@ -99,14 +99,14 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
     `;
 
-    const marker = L.marker([42.844301, 74.598122], {
+    const marker = L.marker([42.876, 74.610], {
       icon: L.divIcon({ html: markerHtml, iconSize: [48, 48], iconAnchor: [24, 48], popupAnchor: [0, -48] })
     }).addTo(map);
 
     marker.bindPopup(`
       <div style="font-family: 'Inter', sans-serif; text-align: center;">
         <strong style="font-size: 1.1rem;">Beauty Lab</strong><br>
-        <span style="color: #666;">ул. Примерная, 01</span>
+        <span style="color: #666;">Центр Бишкека</span>
       </div>
     `);
 
