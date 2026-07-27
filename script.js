@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
         overflow: hidden;
         box-shadow: 0 4px 16px rgba(0,0,0,0.2);
       ">
-        <img src="images/logo.jpg" style="width:100%;height:100%;object-fit:cover;" alt="Beauty Lab">
+        <img src="images/logo.png" style="width:100%;height:100%;object-fit:cover;" alt="Beauty Lab">
       </div>
     `;
 
